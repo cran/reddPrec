@@ -7,7 +7,8 @@ Quality control: Identifies and removes suspect data from the original dataset
 This function uses original data to estimate new predicted values and compare them with observations. If exist large differences, removes the original values.
 }
 \usage{
-qcPrec(prec, sts, inidate, enddate, parallel = TRUE, ncpu = 2, printmeta = TRUE)
+qcPrec(prec, sts, inidate, enddate, parallel = TRUE,
+      ncpu = 2, printmeta = TRUE, thres = NA)
 }
 \arguments{
   \item{prec}{
@@ -31,6 +32,9 @@ Only when \code{parallel = TRUE}. Sets the number of processor cores used to par
   \item{printmeta}{
 When \code{TRUE}, one file per day will be written in subdirectory \code{./meta}.
 }
+\item{thres}{
+Threshold applied to search nearest stations. If \code{thres=NA} the function will search 10 nearest observations without a distance limit. A positive number indicates the threshold in kilometers.
+}
 }
 \details{
 The process of quality control uses five criteria to flag suspect data. All of them are based on the calculation of reference values (RV) made with the 10 nearest observations (NNS) that day. For this reason, a minimum of 11 available data by day is mandatory. The five criteria are : 1) Suspect data: Observed > 0 & all their 10 NNS == 0; 2) Suspect zero: Observed == 0 & all their 10 NNS > 0; 3) Suspect outlier: Observed is 10 times higher or lower than RV; 4) Suspect wet: Observed == 0, wet probability is over 99\%, and predicted magnitude is over 5 litres and 5) Suspect dry: Observed > 5 litres, dry probability is over 99\%, and predicted magnitude is under 0.1 litres.
@@ -52,5 +56,5 @@ It is possible that many \code{warnings} appear at the end of the execution of t
 
   #runs function
   qcPrec(prec=preci,sts=sts,inidate=as.Date('2001-01-01'),
-    enddate=as.Date('2001-01-02'),parallel=TRUE,ncpu=2,printmeta=TRUE)
+    enddate=as.Date('2001-01-02'),parallel=TRUE,ncpu=2,printmeta=TRUE,thres=NA)
 }

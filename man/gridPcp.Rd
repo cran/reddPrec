@@ -38,9 +38,8 @@ Only if \code{parallel = TRUE}. Sets the number of processor cores used to paral
 The precipitation data used to make the grid should be a serially-completed dataset without any missing value. If we use a dataset with gaps, the number of near stations to each point will change along the period and we will introduce inhomogeneities to the final series. We recommend to use the output of \code{gapFilling} function.
 }
 \value{
-A new \code{gridded} directory will be created in working path with one file per day. Each file contains a \code{data.frame} with many rows as points. The columns show the identifier (\code{ID})of each station and the magnitude prediction \code{pred}, this is expresed in the same units as original values (mm*10).
+A new \code{gridded} directory will be created in working path with one file per day. Each file contains a \code{data.frame} with many rows as points. The columns show the identifier (\code{ID})of each station, the magnitude prediction \code{pred} and the standard error \code{err} of the model. All of these values are expresed in the same units as original values (mm*10).
 }
-
 \author{
 Roberto Serrano-Notivoli
 }
