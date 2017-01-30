@@ -15,8 +15,6 @@ gapFilling <- function(prec,sts,inidate,enddate,parallel=TRUE,ncpu=2,thres=NA){
     d=prec[dw,]
     if(sum(is.na(d))==length(d)){
       print(paste('No data on day',x))
-      pred=data.frame(matrix(NA,ncol=7,nrow=length(d))); pred[,1] <- names(d)
-      names(pred)=c('ID','obs','predb','pred1','pred2','pred3','err')
     } else{
       pred=data.frame(matrix(NA,ncol=7,nrow=length(d))); pred[,1] <- names(d)
       names(pred)=c('ID','obs','predb','pred1','pred2','pred3','err')
@@ -120,7 +118,7 @@ gapFilling <- function(prec,sts,inidate,enddate,parallel=TRUE,ncpu=2,thres=NA){
     k=aggregate(pp,by=list(mon1),FUN='sum',na.rm=T)
     p=aggregate(k[,2],by=list(substr(k[,1],6,7)),FUN='mean',na.rm=T)
     f=p[,2]/o[,2] #correction factors by months
-    m=c('01','02','03','04','05','06','07','08','09','10')
+    m=c('01','02','03','04','05','06','07','08','09','10','11','12')
     for(h in 1:12){
       w=which(m[h]==mon2)
       pred[w,i]=pred[w,i]/f[h]
