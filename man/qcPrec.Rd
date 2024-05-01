@@ -20,9 +20,9 @@ qcPrec(
 )
 }
 \arguments{
-\item{prec}{matrix or data.frame containing the original precipitation data. Each column represents one station. The names of columns have to be names of the stations.}
+\item{prec}{matrix containing the original precipitation data. Each column represents one station. The names of columns have to be names of the stations.}
 
-\item{sts}{matrix or data.frame. A column "ID" (unique ID of stations) is required. The rest of the columns (all of them) will act as predictors of the model.}
+\item{sts}{data.frame. A column "ID" (unique ID of stations) is required. The rest of the columns (all of them) will act as predictors of the model.}
 
 \item{crs}{character. Coordinates system in EPSG format (e.g.: "EPSG:4326").}
 

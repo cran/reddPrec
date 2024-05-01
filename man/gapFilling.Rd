@@ -19,9 +19,9 @@ gapFilling(
 )
 }
 \arguments{
-\item{prec}{matrix or data.frame containing the original (cleaned) precipitation data. Each column represents one station. The names of columns must coincide with the names of the stations.}
+\item{prec}{matrix containing the original (cleaned) precipitation data. Each column represents one station. The names of columns must coincide with the names of the stations.}
 
-\item{sts}{matrix or data.frame. A column "ID" (unique ID of stations) is required. The rest of the columns (all of them) will act as predictors of the model.}
+\item{sts}{data.frame. A column "ID" (unique ID of stations) is required. The rest of the columns (all of them) will act as predictors of the model.}
 
 \item{dates}{vector of class "Date" with all days of observations (yyyy-mm-dd).}
 
