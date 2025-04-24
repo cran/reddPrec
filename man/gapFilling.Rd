@@ -7,6 +7,7 @@
 gapFilling(
   prec,
   sts,
+  model_fun = learner_glm,
   dates,
   stmethod = NULL,
   thres = NA,
@@ -22,6 +23,8 @@ gapFilling(
 \item{prec}{matrix containing the original (cleaned) precipitation data. Each column represents one station. The names of columns must coincide with the names of the stations.}
 
 \item{sts}{data.frame. A column "ID" (unique ID of stations) is required. The rest of the columns (all of them) will act as predictors of the model.}
+
+\item{model_fun}{function. A function that integrates the statistical hybrid model (classification and regression). The default is learner_glm, which is the original model. Other models are also available (learner_rf and learner_xgboost). Users can create their functions with different models as well.}
 
 \item{dates}{vector of class "Date" with all days of observations (yyyy-mm-dd).}
 
