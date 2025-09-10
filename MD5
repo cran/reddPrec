@@ -1,5 +1,5 @@
-a56a1f3d3697e13a99a173e836f5e4df *DESCRIPTION
-2944e18d1c0a146bcc46d8ee234b3c24 *NAMESPACE
+8c3f24bcee5e5892cca27dc38b6fdadc *DESCRIPTION
+71d190bcf963ae9d0d1651e0eb2d3049 *NAMESPACE
 797351936994ee65a2cd47ff17ef1804 *R/eqc_Plot.R
 a178a12de18c000c55abe9554688c8b6 *R/eqc_PrecisionRounding-get_dec_patterns.R
 1ca28c8fbea36a553b89fe3bc92234db *R/eqc_PrecisionRounding-get_ndec.R
@@ -33,7 +33,7 @@ a39b8bcda542b74c0c7773df31f747a7 *R/predpoint.R
 3d02faee0386e78c9da9b913c063bc54 *R/qcFirst.R
 c8fd313dd8cd34bb70dbf37d5e6a2426 *R/qcLast.R
 edbb7fedd7e24efd8bc67ced79726522 *R/qcPrec.R
-df2060eef6dc2936c3c76e8993b18126 *R/stand_qq.R
+a5855dc172ea82d2a312e4af55882b78 *R/stand_qq.R
 0b651bbb8e189c1a938a32d2c27a6ebf *R/stand_ratio.R
 622b9f6672b7a56dc060b9e15a3f51af *R/standardization.R
 932a650b99cb5fbe00c45ec51544ff72 *inst/CITATION

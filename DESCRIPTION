@@ -1,6 +1,6 @@
 Package: reddPrec
 Title: Reconstruction of Daily Data - Precipitation
-Version: 3.0.0
+Version: 3.0.1
 Authors@R: 
     c(person(given = "Roberto", 
             family = "Serrano-Notivoli",
@@ -28,11 +28,11 @@ Imports: terra, stats, foreach, doParallel, reshape, qmap, BreakPoints,
         e1071, neuralnet, randomForest, reshape2, xgboost
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-04-12 20:02:10 UTC; rserrano
-Author: Roberto Serrano-Notivoli [aut, cre]
-    (<https://orcid.org/0000-0001-7663-1202>),
-  Adrian Huerta [aut] (<https://orcid.org/0000-0002-2415-3402>),
-  Abel Centella [ctb] (<https://orcid.org/0000-0002-1536-6043>)
+Packaged: 2025-09-10 13:25:03 UTC; usuario
+Author: Roberto Serrano-Notivoli [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-7663-1202>),
+  Adrian Huerta [aut] (ORCID: <https://orcid.org/0000-0002-2415-3402>),
+  Abel Centella [ctb] (ORCID: <https://orcid.org/0000-0002-1536-6043>)
 Maintainer: Roberto Serrano-Notivoli <roberto.serrano@unizar.es>
 Repository: CRAN
-Date/Publication: 2025-04-24 11:30:02 UTC
+Date/Publication: 2025-09-10 15:20:07 UTC
